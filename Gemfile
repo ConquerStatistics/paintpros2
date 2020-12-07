@@ -18,7 +18,9 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
-gem "bulma-rails", "~> 0.9.1"
+gem "bulma-rails", "~> 0.8.0"
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -31,9 +33,10 @@ gem "bulma-rails", "~> 0.9.1"
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
 end
 
 group :development do
@@ -54,7 +57,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
